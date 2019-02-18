@@ -5,7 +5,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-@MapperScan("cn.bdqn.excellencesys.dao")
+@MapperScan("cn.bdqn.excellencesys.*")
 public class ExcellencesysApplication {
 
 	public static void main(String[] args) {
