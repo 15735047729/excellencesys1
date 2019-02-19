@@ -12,13 +12,13 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
 import java.util.List;
 
+@Controller
 @Api(tags = "swagger初学Demo")
-@RestController("/user")
+@RequestMapping("/user")
 public class UserController {
     @Resource
     private UserService userService;
@@ -35,7 +35,7 @@ public class UserController {
                     @ApiImplicitParam(name = "upass",value = "密码",required = true,dataType = "String")
              })
     @ApiOperation(value = "获得姓名和密码", notes = "根据url的name和url的password获得请求参数的字符串相加，RestFul风格的请求")
-    @RequestMapping(value = "/login",method = RequestMethod.GET)
+    @RequestMapping("/login")
     public String login(String unumber, String upass){
         User user=userService.login(unumber,upass);
         if (user!=null){
@@ -59,7 +59,7 @@ public class UserController {
                     @ApiImplicitParam(name = "code", value = "手机验证码", required = true, dataType = "String")
             })
     @ApiOperation(value = "注册姓名和密码,获取手机验证码", notes = "根据url的name和url的password获得请求参数的字符串相加，RestFul风格的请求")
-    @RequestMapping(value = "/regin",method = RequestMethod.POST)
+    @RequestMapping("/regin")
     public String regin(String unumber, String upass,String code){
             return JSON.toJSONString(userService.regin(unumber,upass,code));
     }
@@ -75,7 +75,7 @@ public class UserController {
                     @ApiImplicitParam(name = "uid", value = "用户id", required = true, dataType = "String"),
             })
     @ApiOperation(value = "修改用户登录状态", notes = "根据url的name和url的password获得请求参数的字符串相加，RestFul风格的请求")
-    @RequestMapping(value = "/outLogin",method = RequestMethod.POST)
+    @RequestMapping("/outLogin")
     public String outLogin(Integer uid){
         return JSON.toJSONString(userService.outLogin(uid));
     }
@@ -85,8 +85,11 @@ public class UserController {
      * @param uid
      * @return
      */
+    @ApiImplicitParams(
+            {
+                    @ApiImplicitParam(name = "uid", value = "用户id", required = true,paramType = "path",dataType = "int"),
+            })
     @ApiOperation(value = "个人信息展示", notes = "根据url的name和url的password获得请求参数的字符串相加，RestFul风格的请求")
-    @ApiImplicitParam(name = "uid", value = "用户id", required = true,paramType = "path",dataType = "int")
     @RequestMapping(value = "/getuserInfo/{uid}",method = RequestMethod.GET)
     public String getuserInfo(@PathVariable String uid){
         User user=userService.getuserInfo(Integer.parseInt(uid));
@@ -106,7 +109,7 @@ public class UserController {
                     @ApiImplicitParam(name = "ubalance", value = "用户余额", required = true, dataType = "String"),
             })
     @ApiOperation(value = "账户余额充值", notes = "根据url的name和url的password获得请求参数的字符串相加，RestFul风格的请求")
-    @RequestMapping(value = "/recharge",method = RequestMethod.POST)
+    @RequestMapping("/recharge")
     public String recharge(Integer uid,Double ubalance){
         return JSON.toJSONString(userService.recharge(uid,ubalance));
     }
