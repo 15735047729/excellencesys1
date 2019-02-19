@@ -3,19 +3,18 @@ package com.example.excellencesys.pojo;
 
 public class City {
 
-  private long cid;
+  private Integer cid;
   private String name;
-  private long pid;
+  private Integer pid;
 
 
-  public long getCid() {
+  public Integer getCid() {
     return cid;
   }
 
-  public void setCid(long cid) {
+  public void setCid(Integer cid) {
     this.cid = cid;
   }
-
 
   public String getName() {
     return name;
@@ -25,13 +24,11 @@ public class City {
     this.name = name;
   }
 
-
-  public long getPid() {
+  public Integer getPid() {
     return pid;
   }
 
-  public void setPid(long pid) {
+  public void setPid(Integer pid) {
     this.pid = pid;
   }
-
 }

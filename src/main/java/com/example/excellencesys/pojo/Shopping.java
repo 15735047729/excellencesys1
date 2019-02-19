@@ -3,38 +3,34 @@ package com.example.excellencesys.pojo;
 
 public class Shopping {
 
-  private long comid;
-  private long uid;
-  private long number;
+  private Integer comid;
+  private Integer uid;
+  private Integer number;
   private double prive;
 
-
-  public long getComid() {
+  public Integer getComid() {
     return comid;
   }
 
-  public void setComid(long comid) {
+  public void setComid(Integer comid) {
     this.comid = comid;
   }
 
-
-  public long getUid() {
+  public Integer getUid() {
     return uid;
   }
 
-  public void setUid(long uid) {
+  public void setUid(Integer uid) {
     this.uid = uid;
   }
 
-
-  public long getNumber() {
+  public Integer getNumber() {
     return number;
   }
 
-  public void setNumber(long number) {
+  public void setNumber(Integer number) {
     this.number = number;
   }
-
 
   public double getPrive() {
     return prive;
@@ -43,5 +39,4 @@ public class Shopping {
   public void setPrive(double prive) {
     this.prive = prive;
   }
-
 }

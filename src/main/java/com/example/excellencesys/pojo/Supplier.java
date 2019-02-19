@@ -3,7 +3,7 @@ package com.example.excellencesys.pojo;
 
 public class Supplier {
 
-  private long sid;
+  private Integer sid;
   private String snumber;
   private String spass;
   private String sname;
@@ -12,15 +12,13 @@ public class Supplier {
   private String spositive;
   private String sside;
 
-
-  public long getSid() {
+  public Integer getSid() {
     return sid;
   }
 
-  public void setSid(long sid) {
+  public void setSid(Integer sid) {
     this.sid = sid;
   }
-
 
   public String getSnumber() {
     return snumber;
@@ -30,7 +28,6 @@ public class Supplier {
     this.snumber = snumber;
   }
 
-
   public String getSpass() {
     return spass;
   }
@@ -38,7 +35,6 @@ public class Supplier {
   public void setSpass(String spass) {
     this.spass = spass;
   }
-
 
   public String getSname() {
     return sname;
@@ -48,7 +44,6 @@ public class Supplier {
     this.sname = sname;
   }
 
-
   public String getStelephone() {
     return stelephone;
   }
@@ -56,7 +51,6 @@ public class Supplier {
   public void setStelephone(String stelephone) {
     this.stelephone = stelephone;
   }
-
 
   public String getSaddress() {
     return saddress;
@@ -66,7 +60,6 @@ public class Supplier {
     this.saddress = saddress;
   }
 
-
   public String getSpositive() {
     return spositive;
   }
@@ -75,7 +68,6 @@ public class Supplier {
     this.spositive = spositive;
   }
 
-
   public String getSside() {
     return sside;
   }
@@ -83,5 +75,4 @@ public class Supplier {
   public void setSside(String sside) {
     this.sside = sside;
   }
-
 }

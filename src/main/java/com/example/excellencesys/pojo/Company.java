@@ -3,18 +3,17 @@ package com.example.excellencesys.pojo;
 
 public class Company {
 
-  private long compid;
+  private Integer compid;
   private String compname;
 
 
-  public long getCompid() {
+  public Integer getCompid() {
     return compid;
   }
 
-  public void setCompid(long compid) {
+  public void setCompid(Integer compid) {
     this.compid = compid;
   }
-
 
   public String getCompname() {
     return compname;
@@ -23,5 +22,4 @@ public class Company {
   public void setCompname(String compname) {
     this.compname = compname;
   }
-
 }

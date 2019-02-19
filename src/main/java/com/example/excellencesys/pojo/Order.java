@@ -1,24 +1,24 @@
 package com.example.excellencesys.pojo;
 
 
+import java.util.Date;
+
 public class Order {
 
-  private long oid;
+  private Integer oid;
   private String oname;
-  private long uid;
-  private long orid;
-  private java.sql.Date ogtime;
-  private java.sql.Date octime;
+  private Integer uid;
+  private Integer orid;
+  private Date ogtime;
+  private Date octime;
 
-
-  public long getOid() {
+  public Integer getOid() {
     return oid;
   }
 
-  public void setOid(long oid) {
+  public void setOid(Integer oid) {
     this.oid = oid;
   }
-
 
   public String getOname() {
     return oname;
@@ -28,40 +28,35 @@ public class Order {
     this.oname = oname;
   }
 
-
-  public long getUid() {
+  public Integer getUid() {
     return uid;
   }
 
-  public void setUid(long uid) {
+  public void setUid(Integer uid) {
     this.uid = uid;
   }
 
-
-  public long getOrid() {
+  public Integer getOrid() {
     return orid;
   }
 
-  public void setOrid(long orid) {
+  public void setOrid(Integer orid) {
     this.orid = orid;
   }
 
-
-  public java.sql.Date getOgtime() {
+  public Date getOgtime() {
     return ogtime;
   }
 
-  public void setOgtime(java.sql.Date ogtime) {
+  public void setOgtime(Date ogtime) {
     this.ogtime = ogtime;
   }
 
-
-  public java.sql.Date getOctime() {
+  public Date getOctime() {
     return octime;
   }
 
-  public void setOctime(java.sql.Date octime) {
+  public void setOctime(Date octime) {
     this.octime = octime;
   }
-
 }

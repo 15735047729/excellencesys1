@@ -3,28 +3,25 @@ package com.example.excellencesys.pojo;
 
 public class Twoclassification {
 
-  private long tid;
-  private long aid;
+  private Integer tid;
+  private Integer aid;
   private String tname;
 
-
-  public long getTid() {
+  public Integer getTid() {
     return tid;
   }
 
-  public void setTid(long tid) {
+  public void setTid(Integer tid) {
     this.tid = tid;
   }
 
-
-  public long getAid() {
+  public Integer getAid() {
     return aid;
   }
 
-  public void setAid(long aid) {
+  public void setAid(Integer aid) {
     this.aid = aid;
   }
-
 
   public String getTname() {
     return tname;
@@ -33,5 +30,4 @@ public class Twoclassification {
   public void setTname(String tname) {
     this.tname = tname;
   }
-
 }

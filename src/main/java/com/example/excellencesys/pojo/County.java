@@ -3,19 +3,18 @@ package com.example.excellencesys.pojo;
 
 public class County {
 
-  private long coid;
+  private Integer coid;
   private String coname;
-  private long cid;
+  private Integer cid;
 
 
-  public long getCoid() {
+  public Integer getCoid() {
     return coid;
   }
 
-  public void setCoid(long coid) {
+  public void setCoid(Integer coid) {
     this.coid = coid;
   }
-
 
   public String getConame() {
     return coname;
@@ -25,13 +24,13 @@ public class County {
     this.coname = coname;
   }
 
-
-  public long getCid() {
+  public Integer getCid() {
     return cid;
   }
 
-  public void setCid(long cid) {
+  public void setCid(Integer cid) {
     this.cid = cid;
   }
+
 
 }

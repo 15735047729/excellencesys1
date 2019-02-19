@@ -3,28 +3,26 @@ package com.example.excellencesys.pojo;
 
 public class Picture {
 
-  private long piid;
-  private long comid;
+  private Integer piid;
+  private Integer comid;
   private String piroute;
 
 
-  public long getPiid() {
+  public Integer getPiid() {
     return piid;
   }
 
-  public void setPiid(long piid) {
+  public void setPiid(Integer piid) {
     this.piid = piid;
   }
 
-
-  public long getComid() {
+  public Integer getComid() {
     return comid;
   }
 
-  public void setComid(long comid) {
+  public void setComid(Integer comid) {
     this.comid = comid;
   }
-
 
   public String getPiroute() {
     return piroute;
@@ -33,5 +31,4 @@ public class Picture {
   public void setPiroute(String piroute) {
     this.piroute = piroute;
   }
-
 }

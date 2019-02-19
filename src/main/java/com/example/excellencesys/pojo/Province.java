@@ -3,18 +3,16 @@ package com.example.excellencesys.pojo;
 
 public class Province {
 
-  private long pid;
+  private Integer pid;
   private String pname;
 
-
-  public long getPid() {
+  public Integer getPid() {
     return pid;
   }
 
-  public void setPid(long pid) {
+  public void setPid(Integer pid) {
     this.pid = pid;
   }
-
 
   public String getPname() {
     return pname;
@@ -23,5 +21,4 @@ public class Province {
   public void setPname(String pname) {
     this.pname = pname;
   }
-
 }

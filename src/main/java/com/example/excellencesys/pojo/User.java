@@ -3,24 +3,22 @@ package com.example.excellencesys.pojo;
 
 public class User {
 
-  private long uid;
+  private Integer uid;
   private String uname;
   private String unumber;
   private String upass;
   private String portrait;
-  private long ustate;
-  private long umember;
+  private Integer ustate;
+  private Integer umember;
   private double ubalance;
 
-
-  public long getUid() {
+  public Integer getUid() {
     return uid;
   }
 
-  public void setUid(long uid) {
+  public void setUid(Integer uid) {
     this.uid = uid;
   }
-
 
   public String getUname() {
     return uname;
@@ -30,7 +28,6 @@ public class User {
     this.uname = uname;
   }
 
-
   public String getUnumber() {
     return unumber;
   }
@@ -38,7 +35,6 @@ public class User {
   public void setUnumber(String unumber) {
     this.unumber = unumber;
   }
-
 
   public String getUpass() {
     return upass;
@@ -48,7 +44,6 @@ public class User {
     this.upass = upass;
   }
 
-
   public String getPortrait() {
     return portrait;
   }
@@ -57,24 +52,21 @@ public class User {
     this.portrait = portrait;
   }
 
-
-  public long getUstate() {
+  public Integer getUstate() {
     return ustate;
   }
 
-  public void setUstate(long ustate) {
+  public void setUstate(Integer ustate) {
     this.ustate = ustate;
   }
 
-
-  public long getUmember() {
+  public Integer getUmember() {
     return umember;
   }
 
-  public void setUmember(long umember) {
+  public void setUmember(Integer umember) {
     this.umember = umember;
   }
-
 
   public double getUbalance() {
     return ubalance;
@@ -83,5 +75,4 @@ public class User {
   public void setUbalance(double ubalance) {
     this.ubalance = ubalance;
   }
-
 }

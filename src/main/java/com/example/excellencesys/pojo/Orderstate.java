@@ -3,18 +3,16 @@ package com.example.excellencesys.pojo;
 
 public class Orderstate {
 
-  private long orid;
+  private Integer orid;
   private String orname;
 
-
-  public long getOrid() {
+  public Integer getOrid() {
     return orid;
   }
 
-  public void setOrid(long orid) {
+  public void setOrid(Integer orid) {
     this.orid = orid;
   }
-
 
   public String getOrname() {
     return orname;
@@ -23,5 +21,4 @@ public class Orderstate {
   public void setOrname(String orname) {
     this.orname = orname;
   }
-
 }

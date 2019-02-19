@@ -3,43 +3,40 @@ package com.example.excellencesys.pojo;
 
 public class Commodity {
 
-  private long comid;
-  private long compid;
-  private long sid;
+  private Integer comid;
+  private Integer compid;
+  private Integer sid;
   private String comname;
-  private long tid;
+  private Integer tid;
   private double comprice;
-  private long comstock;
-  private long comsellers;
-  private long comproducts;
+  private Integer comstock;
+  private Integer comsellers;
+  private Integer comproducts;
 
 
-  public long getComid() {
+  public Integer getComid() {
     return comid;
   }
 
-  public void setComid(long comid) {
+  public void setComid(Integer comid) {
     this.comid = comid;
   }
 
-
-  public long getCompid() {
+  public Integer getCompid() {
     return compid;
   }
 
-  public void setCompid(long compid) {
+  public void setCompid(Integer compid) {
     this.compid = compid;
   }
 
-
-  public long getSid() {
+  public Integer getSid() {
     return sid;
   }
 
-  public void setSid(long sid) {
+  public void setSid(Integer sid) {
     this.sid = sid;
   }
-
 
   public String getComname() {
     return comname;
@@ -49,15 +46,13 @@ public class Commodity {
     this.comname = comname;
   }
 
-
-  public long getTid() {
+  public Integer getTid() {
     return tid;
   }
 
-  public void setTid(long tid) {
+  public void setTid(Integer tid) {
     this.tid = tid;
   }
-
 
   public double getComprice() {
     return comprice;
@@ -67,31 +62,27 @@ public class Commodity {
     this.comprice = comprice;
   }
 
-
-  public long getComstock() {
+  public Integer getComstock() {
     return comstock;
   }
 
-  public void setComstock(long comstock) {
+  public void setComstock(Integer comstock) {
     this.comstock = comstock;
   }
 
-
-  public long getComsellers() {
+  public Integer getComsellers() {
     return comsellers;
   }
 
-  public void setComsellers(long comsellers) {
+  public void setComsellers(Integer comsellers) {
     this.comsellers = comsellers;
   }
 
-
-  public long getComproducts() {
+  public Integer getComproducts() {
     return comproducts;
   }
 
-  public void setComproducts(long comproducts) {
+  public void setComproducts(Integer comproducts) {
     this.comproducts = comproducts;
   }
-
 }

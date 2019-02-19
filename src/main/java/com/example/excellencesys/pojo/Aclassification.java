@@ -3,18 +3,17 @@ package com.example.excellencesys.pojo;
 
 public class Aclassification {
 
-  private long aid;
+  private Integer aid;
   private String aname;
 
 
-  public long getAid() {
+  public Integer getAid() {
     return aid;
   }
 
-  public void setAid(long aid) {
+  public void setAid(Integer aid) {
     this.aid = aid;
   }
-
 
   public String getAname() {
     return aname;
@@ -23,5 +22,4 @@ public class Aclassification {
   public void setAname(String aname) {
     this.aname = aname;
   }
-
 }

@@ -1,23 +1,23 @@
 package com.example.excellencesys.pojo;
 
 
+import java.util.Date;
+
 public class Find {
 
-  private long fid;
+  private Integer fid;
   private String ftitle;
   private String fcontent;
-  private java.sql.Date ftime;
-  private long findcid;
+  private Date ftime;
+  private Integer findcid;
 
-
-  public long getFid() {
+  public Integer getFid() {
     return fid;
   }
 
-  public void setFid(long fid) {
+  public void setFid(Integer fid) {
     this.fid = fid;
   }
-
 
   public String getFtitle() {
     return ftitle;
@@ -27,7 +27,6 @@ public class Find {
     this.ftitle = ftitle;
   }
 
-
   public String getFcontent() {
     return fcontent;
   }
@@ -36,22 +35,19 @@ public class Find {
     this.fcontent = fcontent;
   }
 
-
-  public java.sql.Date getFtime() {
+  public Date getFtime() {
     return ftime;
   }
 
-  public void setFtime(java.sql.Date ftime) {
+  public void setFtime(Date ftime) {
     this.ftime = ftime;
   }
 
-
-  public long getFindcid() {
+  public Integer getFindcid() {
     return findcid;
   }
 
-  public void setFindcid(long findcid) {
+  public void setFindcid(Integer findcid) {
     this.findcid = findcid;
   }
-
 }

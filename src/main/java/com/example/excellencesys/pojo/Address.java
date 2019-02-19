@@ -3,18 +3,17 @@ package com.example.excellencesys.pojo;
 
 public class Address {
 
-  private long uid;
+  private Integer uid;
   private String address;
 
 
-  public long getUid() {
+  public Integer getUid() {
     return uid;
   }
 
-  public void setUid(long uid) {
+  public void setUid(Integer uid) {
     this.uid = uid;
   }
-
 
   public String getAddress() {
     return address;
@@ -23,5 +22,4 @@ public class Address {
   public void setAddress(String address) {
     this.address = address;
   }
-
 }

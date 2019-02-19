@@ -3,18 +3,16 @@ package com.example.excellencesys.pojo;
 
 public class Findclassification {
 
-  private long findcid;
+  private Integer findcid;
   private String address;
 
-
-  public long getFindcid() {
+  public Integer getFindcid() {
     return findcid;
   }
 
-  public void setFindcid(long findcid) {
+  public void setFindcid(Integer findcid) {
     this.findcid = findcid;
   }
-
 
   public String getAddress() {
     return address;
@@ -23,5 +21,4 @@ public class Findclassification {
   public void setAddress(String address) {
     this.address = address;
   }
-
 }

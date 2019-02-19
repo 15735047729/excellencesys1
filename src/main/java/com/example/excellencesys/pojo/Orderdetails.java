@@ -3,48 +3,43 @@ package com.example.excellencesys.pojo;
 
 public class Orderdetails {
 
-  private long ordid;
-  private long oid;
-  private long comid;
-  private long onumber;
+  private Integer ordid;
+  private Integer oid;
+  private Integer comid;
+  private Integer onumber;
   private double oprice;
 
-
-  public long getOrdid() {
+  public Integer getOrdid() {
     return ordid;
   }
 
-  public void setOrdid(long ordid) {
+  public void setOrdid(Integer ordid) {
     this.ordid = ordid;
   }
 
-
-  public long getOid() {
+  public Integer getOid() {
     return oid;
   }
 
-  public void setOid(long oid) {
+  public void setOid(Integer oid) {
     this.oid = oid;
   }
 
-
-  public long getComid() {
+  public Integer getComid() {
     return comid;
   }
 
-  public void setComid(long comid) {
+  public void setComid(Integer comid) {
     this.comid = comid;
   }
 
-
-  public long getOnumber() {
+  public Integer getOnumber() {
     return onumber;
   }
 
-  public void setOnumber(long onumber) {
+  public void setOnumber(Integer onumber) {
     this.onumber = onumber;
   }
-
 
   public double getOprice() {
     return oprice;
@@ -53,5 +48,4 @@ public class Orderdetails {
   public void setOprice(double oprice) {
     this.oprice = oprice;
   }
-
 }
