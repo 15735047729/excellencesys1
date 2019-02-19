@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://www.mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.excellencesys.dao.AddressDao" >
+
+    <select id="getAddressList" resultType="com.example.excellencesys.pojo.Address">
+        select * from User where uid=#{uid}
+    </select>
+    <update id="updateAddress">
+        update User set  address=#{address} where uid=#{uid}
+    </update>
+    <insert id="addAddress">
+        insert  into User values(#{uid},#{address});
+    </insert>
+</mapper>

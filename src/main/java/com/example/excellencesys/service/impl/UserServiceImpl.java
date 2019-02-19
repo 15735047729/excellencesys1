@@ -31,21 +31,6 @@ public class UserServiceImpl implements UserService{
     }
 
     @Override
-    public List<Address> getAddressList(Integer uid) {
-        return userDao.getAddressList(uid);
-    }
-
-    @Override
-    public Integer updateAddress(Address address) {
-        return userDao.updateAddress(address);
-    }
-
-    @Override
-    public Integer addAddress(Address address) {
-        return userDao.addAddress(address);
-    }
-
-    @Override
     public Integer outLogin(Integer uid) {
         return userDao.outLogin(uid);
     }
@@ -53,11 +38,6 @@ public class UserServiceImpl implements UserService{
     @Override
     public User getuserInfo(Integer uid) {
         return userDao.getuserInfo(uid);
-    }
-
-    @Override
-    public Double getbalance(Integer uid) {
-        return userDao.getbalance(uid);
     }
 
     @Override

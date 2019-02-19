@@ -18,16 +18,13 @@
         update User set  address=#{address} where uid=#{uid}
     </update>
     <insert id="addAddress">
-        insert  into User values(null,#{address});
+        insert  into User values(#{uid},#{address});
     </insert>
     <update id="outLogin">
         update User set  ustate=0  where uid=#{uid}
     </update>
     <select id="getuserInfo" resultType="com.example.excellencesys.pojo.User">
         select * from User where uid=#{uid}
-    </select>
-    <select id="getbalance" resultType="com.example.excellencesys.pojo.User">
-        select ubalance from User where uid=#{uid}
     </select>
     <update id="recharge">
         update User set  ubalance=#{ubalance} where uid=#{uid}

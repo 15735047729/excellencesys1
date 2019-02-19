@@ -8,7 +8,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @EnableSwagger2
 @SpringBootApplication
-@MapperScan("cn.bdqn.excellencesys.dao")
+@MapperScan("com.example.excellencesys.dao")
 public class ExcellencesysApplication {
 
 	public static void main(String[] args) {
