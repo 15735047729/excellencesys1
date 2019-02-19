@@ -19,12 +19,17 @@ public class AddressServiceImpl implements AddressService{
     }
 
     @Override
-    public Integer updateAddress(Address address) {
-        return addressDao.updateAddress(address);
+    public Integer updateAddress(String address,Integer addid) {
+        return addressDao.updateAddress(address,addid);
     }
 
     @Override
-    public Integer addAddress(Address address) {
-        return addressDao.addAddress(address);
+    public Integer addAddress(String address,Integer uid) {
+        return addressDao.addAddress(address,uid);
+    }
+
+    @Override
+    public Integer delAddress(Integer addid) {
+        return addressDao.delAddress(addid);
     }
 }

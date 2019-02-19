@@ -9,7 +9,7 @@
         update User set  ustate=1  where uid=#{uid}
     </update>
     <insert id="regin">
-        insert into User values(null,#{uname},#{unumber},#{upass},null,null,null,null)
+        insert into User values(null,"啦啦啦",#{unumber},#{upass},"d:/111.jpb",0,1,0)
     </insert>
     <select id="getAddressList" resultType="com.example.excellencesys.pojo.User">
         select * from User where uid=#{uid}
