@@ -17,7 +17,7 @@ import javax.annotation.Resource;
 import java.util.List;
 
 @RestController
-@Api(tags = "住址信息")
+@Api(tags = "住址")
 @RequestMapping("/user")
 public class AddressController {
     @Resource
