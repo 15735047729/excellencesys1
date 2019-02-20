@@ -4,12 +4,15 @@
 <mapper namespace="com.example.excellencesys.dao.AddressDao" >
 
     <select id="getAddressList" resultType="com.example.excellencesys.pojo.Address">
-        select * from User where uid=#{uid}
+        select * from address where uid=#{uid}
     </select>
     <update id="updateAddress">
-        update User set  address=#{address} where uid=#{uid}
+        update address set  address=#{address} where addid=#{addid}
     </update>
     <insert id="addAddress">
-        insert  into User values(#{uid},#{address});
+        insert  into address values(null,#{uid},#{address});
     </insert>
+    <delete id="delAddress">
+        delete from address where addid=#{addid}
+    </delete>
 </mapper>
