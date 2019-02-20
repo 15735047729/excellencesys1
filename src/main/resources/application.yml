@@ -1,9 +1,11 @@
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/excellence?useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT
     username: root
-    password: 123456
-
+    password: 5484986
+    url: jdbc:mysql://127.0.0.1:3306/excellence?useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT
 mybatis:
-  mapper-locations: classpath:mapper/*.xml
+  mapper-locations: classpath:Mapper/*.xml
+  type-aliases-package: cn.bdqn.springboot.cn.bdqn.pojo
+server:
+  port: 7070
