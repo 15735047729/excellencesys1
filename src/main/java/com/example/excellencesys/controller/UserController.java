@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.annotation.Resource;
 import java.util.List;
 
-@Api(tags = "用户")
+@Api(tags = "用户1")
 @RestController("/user")
 public class UserController {
     @Resource
