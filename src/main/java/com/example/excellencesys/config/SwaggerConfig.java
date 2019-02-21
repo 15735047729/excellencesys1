@@ -23,6 +23,7 @@ public class SwaggerConfig {
                 "123456789@qq.com",
                 "",
                 "");
+
         docket.apiInfo(apiInfo);
         return docket;
     }
